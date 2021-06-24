@@ -1,0 +1,84 @@
+<html>
+<head>
+   <title>Linkvertise Bypasser</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Linkvertise Bypasser">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bypass Link 🐱‍💻LinkVertise Links With Just A Click">
+	<meta property="og:title" content="Linkvertise Bypasser">
+	<meta property="og:site_name" content="Linkvertise Bypasser">
+	<meta property="og:description" content="Bypass Link 🐱‍💻LinkVertise Links With Just A Click.">
+	<meta property="og:image" content="https://cdn.discordapp.com/attachments/758947557417680937/857121669750587402/ezgif.com-gif-maker.gif">
+	<meta name="twitter:card" content="https://cdn.discordapp.com/attachments/758947557417680937/857121669750587402/ezgif.com-gif-maker.gif">
+	<link rel="shortcut icon" href="https://img.icons8.com/cotton/2x/edit.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Linkvertise Bypass</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+    <button onclick="login()">Login to Account</button>
+    <button onclick="signup()">SignUp</button>
+  </div>
+
+  <div id="login_div1" class="main-div">
+    <h3>Sign up</h3>
+    <input type="email" placeholder="Email..." id="email_field1" />
+    <input type="password" placeholder="Password..." id="password_field1" />
+    <button onclick="signUp()">Signup Account</button>
+    <button onclick="back()">Allready Have An Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <script src="api.js"></script>
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to LinkVerise Bypasser. You're currently logged in.</p>
+    <p> 
+      🐱‍💻LinkVertise Bypasser<br/>
+      Please enter down below a Linkvertise link to bypass.<br/>
+         <br>
+            <br>
+      <form action="#">
+          <input placeholder="Link"/><br/>
+
+           <br>
+          <button>Bypass Link</button>
+          <button onclick="location.reload();">Clear Results</button>
+      </form>
+  </p>
+  <p>
+      Bypassed Links:<br/>
+      <ul></ul>
+  </p>
+  <br>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+<script src="api.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+    apiKey: "AIzaSyDCQrNi40uswXHKFKODMZtf0XvmDZoDjAc",
+    authDomain: "loginlink-51c1f.firebaseapp.com",
+    projectId: "loginlink-51c1f",
+    storageBucket: "loginlink-51c1f.appspot.com",
+    messagingSenderId: "362455573380",
+    appId: "1:362455573380:web:ceb8ffb820782b1d3533d1",
+    measurementId: "G-BSKVVC4NQP"
+  };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
